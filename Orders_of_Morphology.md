@@ -1,4 +1,4 @@
-# Orders of Topology
+# Orders of Morphology
 ## A Generative Morphology Framework
 
 *Synthesizing geometric construction, biological morphogenesis, and attractor dynamics into a unified hierarchy of generative freedom.*
