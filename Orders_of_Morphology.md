@@ -7,7 +7,7 @@
 
 ## Preface
 
-This document formalizes the **Orders of Topology** — a framework for classifying all constructed forms (geometric, biological, developmental) by the number of unfixed degrees of freedom in their generating rule. It is not a calculus tower. It is a **freedom lattice**: each order doesn't add a derivative, it removes a constraint. The correct analogy is not Taylor expansion — it is the expansion of a phase space.
+This document formalizes the **Orders of morphology** — a framework for classifying all constructed forms (geometric, biological, developmental) by the number of unfixed degrees of freedom in their generating rule. It is not a calculus tower. It is a **freedom lattice**: each order doesn't add a derivative, it removes a constraint. The correct analogy is not Taylor expansion — it is the expansion of a phase space.
 
 The intuition at the core: *all shapes can be understood as cross-sections transported about paths, and what distinguishes shape classes is what is allowed to change during that transport.*
 
@@ -182,13 +182,13 @@ S(s,t) = P(t) + F(s,t) · C(s)
 The cross-section can:
 - Change shape (circle to ellipse to teardrop)
 - Change size (taper in non-uniform ways)
-- Change topology (if extended to allow it)
+- Change morphology (if extended to allow it)
 - Respond to the path's curvature
 - Change independently of the path
 
 **Why this is not just "more calculus":**
 
-The jump from Order 2 to Order 3 is not adding another derivative to the description. It is removing the constraint that the section is rigid. Once C(s) is free to vary with t, the **relationship** between path and section becomes a constraint satisfaction problem over a continuous domain. The solver (in CAD: the loft kernel; in biology: the morphogenic gradient field) must interpolate a coherent surface through all section states simultaneously. This is why organic forms are computationally expensive to generate and why they can exhibit chaotic sensitivity to control parameter changes — small changes to intermediate section profiles can propagate into large changes in the final surface topology.
+The jump from Order 2 to Order 3 is not adding another derivative to the description. It is removing the constraint that the section is rigid. Once C(s) is free to vary with t, the **relationship** between path and section becomes a constraint satisfaction problem over a continuous domain. The solver (in CAD: the loft kernel; in biology: the morphogenic gradient field) must interpolate a coherent surface through all section states simultaneously. This is why organic forms are computationally expensive to generate and why they can exhibit chaotic sensitivity to control parameter changes — small changes to intermediate section profiles can propagate into large changes in the final surface morphology.
 
 **Instances within Order 3:**
 
@@ -203,7 +203,7 @@ The **horn** (or tusk): a monotonically tapering, smoothly curving form where th
 
 **Order 3 radial element:** The section's orientation can rotate about the path as it evolves — producing forms with twist that is not path-induced (as in Order 2) but section-induced. This is what generates the spiral character of many shells, horns, and tubular organisms.
 
-**Biological analog:** A mammalian organ: local tissue architecture (cell types, extracellular matrix, vasculature) varies throughout a 3D region. A limb. A fuselage. The orders of topology here are not metaphor — the fiber at each point of the base space is literally the cross-sectional tissue state, and F(s,t) is literally the morphogenic gradient field controlling which attractor state that fiber inhabits.
+**Biological analog:** A mammalian organ: local tissue architecture (cell types, extracellular matrix, vasculature) varies throughout a 3D region. A limb. A fuselage. The orders of morphology here are not metaphor — the fiber at each point of the base space is literally the cross-sectional tissue state, and F(s,t) is literally the morphogenic gradient field controlling which attractor state that fiber inhabits.
 
 ---
 
@@ -235,7 +235,7 @@ Every order has a **canonical form** — the shape produced when all free parame
 |-------|-----------------------------|-----------|
 | 1 | λ(t) = kt (linear scaling) | Cone |
 | 2 | κ = const, τ = const | Helix |
-| 3 | Section changes only in scale/orientation, not topology | Horn / Tusk |
+| 3 | Section changes only in scale/orientation, not morphology | Horn / Tusk |
 | 4 | Feedback gain fixed, reaction rates constant | Turing stripe / reaction-diffusion spot |
 
 The eigenform is not the most interesting shape an order can produce — it is the *simplest* shape that cannot be produced by a lower order. It is the minimum-complexity representative of its class.
@@ -250,7 +250,7 @@ This generalizes: every eigenform is a generating object for a family, indexed b
 
 ## Part IV: Connection to Biological Morphogenesis
 
-The Orders of Topology are not an analogy to biological form — they are the **same structure** described from two different vantage points.
+The Orders of morphology are not an analogy to biological form — they are the **same structure** described from two different vantage points.
 
 ### The Fiber Bundle Correspondence
 
@@ -262,7 +262,7 @@ A fiber bundle consists of:
 
 Morphogenesis is the dynamic construction of a fiber bundle. The transformation field F(s,t) is the **morphogenic gradient** — the control parameter that selects which fiber state is realized at each point of the base space.
 
-| Topology Framework | Fiber Bundle | Biological Realization |
+| morphology Framework | Fiber Bundle | Biological Realization |
 |-------------------|--------------|----------------------|
 | C(s) | Fiber | Cell fate / tissue cross-section |
 | P(t) | Base space | Body axis / developmental coordinate |
@@ -379,7 +379,7 @@ S = T_P ∘ R_t ∘ D_{s,t} (C)
 
 4. **What is the eigenform of Order 4?** Turing patterns are proposed candidates, but they may be too specific. The general fixed-point of a reactive transport system under constant feedback gain is an open question.
 
-5. **Does the Pascal connection hold?** Conic sections (Order 1 eigenform family) are degree-2 algebraic curves — they live in the n=2 row of Pascal's triangle (binomial coefficients). Do the eigenform families of higher orders correspond to higher rows — higher-degree polynomial families? If so, the orders of topology may have a direct algebraic geometry interpretation.
+5. **Does the Pascal connection hold?** Conic sections (Order 1 eigenform family) are degree-2 algebraic curves — they live in the n=2 row of Pascal's triangle (binomial coefficients). Do the eigenform families of higher orders correspond to higher rows — higher-degree polynomial families? If so, the orders of morphology may have a direct algebraic geometry interpretation.
 
 ---
 
