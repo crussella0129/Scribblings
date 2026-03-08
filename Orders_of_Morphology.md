@@ -7,7 +7,7 @@
 
 ## Preface
 
-This document formalizes the **Orders of morphology** — a framework for classifying all constructed forms (geometric, biological, developmental) by the number of unfixed degrees of freedom in their generating rule. It is not a calculus tower. It is a **freedom lattice**: each order doesn't add a derivative, it removes a constraint. The correct analogy is not Taylor expansion — it is the expansion of a phase space.
+This document formalizes the **Orders of morphology** — a framework for classifying all constructed forms (geometric, biological, developmental) by the number of unfixed degrees of freedom in their generating rule. It is not a calculus tower. It is a **freedom lattice**: each order doesn't add a derivative, it removes a constraint. Therefore, the correct analogy is not Taylor expansion, but rather, the expansion of a phase space.
 
 The intuition at the core: *all shapes can be understood as cross-sections transported about paths, and what distinguishes shape classes is what is allowed to change during that transport.*
 
