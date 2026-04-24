@@ -1,6 +1,6 @@
 # The Orders of Growth
 
-*Pascal's Triangle as the Universal Growth Encoder for Power Functions*
+*Pascal's Triangle as the Universal Growth Encoder for Power Functions - extended to machine learning models for the acceleration of polynomial calculation*
 
 ## Abstract
 
